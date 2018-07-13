@@ -30,9 +30,9 @@
 	</bean>
 
 	<!-- 扫包中所有的接口，自动生成对应的代理对象 找id为sqlSessionFactory -->
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.xinhuanet.mapper" />
-	</bean> 
+	</bean> -->
 	
 	<!-- 配置该文件及以下的变量 -->
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

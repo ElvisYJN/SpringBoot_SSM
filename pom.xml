@@ -128,4 +128,32 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<profiles>
+		<!-- 开启文件过滤 用于生产环境和开发环境打包 -->
+		<profile>
+			<id>test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<runtime.env>src/main/conf/test</runtime.env>
+				<package.name.suffix>test</package.name.suffix>
+			</properties>
+		</profile>
+		<profile>
+			<id>pro</id>
+			<properties>
+				<runtime.env>src/main/conf/pro</runtime.env>
+				<package.name.suffix>pro</package.name.suffix>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<runtime.env>src/main/conf/dev</runtime.env>
+				<package.name.suffix>dev</package.name.suffix>
+			</properties>
+		</profile>
+	</profiles>
+
 </project>

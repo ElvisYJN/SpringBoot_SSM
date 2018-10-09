@@ -11,7 +11,7 @@ public class JspController {
     public ModelAndView findJsp(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("id", "114955");
-        modelAndView.setViewName("/WEB-INF/jsp/1.jsp");
+        modelAndView.setViewName("/WEB-INF/1.jsp");
         return modelAndView;
     }
 
